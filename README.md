@@ -1,1 +1,20 @@
 # Intro_to_Python
+Objectives: I am currently pursuing a career in Cybersecurity. I am learning about warfare that occurs because of cybersecurity incidents. These incidents occur every single second around the world. Whether you are eating, sleeping, or relaxing, cyber-attacks are taking place everywhere. We can think of it as a virus, like COVID-19 for example. We do not see it, we do not always experience it, but millions of lives are being taken because of this invisible sickness. Thousands of malware viruses are being executed on user devices every single second. This kind of digital warfare has gripped me. It has enabled me to partake in the fight to defend against these types of attacks. I have discovered an appreciation for the field, and I am trying to expand my skills by understanding the language and communications of computers. Throughout this course, I have learned some of the fundamental concepts of Python. The concepts that I learned in this course were implemented into this work. I hope that this program can be useful to users by helping them defend against cyber-attacks and hackers.
+
+
+
+Problem description: The problem that end-users face is that their systems are vulnerable to attacks. I pondered one of the popular vulnerabilities within computer systems and user behaviors. I realized that password vulnerabilities have become one of the leading issues that birth the pains of anguish in cyber-attacks. Weak passwords are one of the leading issues that users face. This results in the various cyber-attacks that we hear about every day. Hackers are after your passwords. If a hacker or a criminal has your password, he has the keys to your home. It is like going on vacation while a robber has the keys to your home. You cannot stop this criminal. This person will soon take all your valuables. It is the same as a hacker gaining access to your passwords. They have access to all your information. Furthermore, they will steal all your valuable information. Examples include debit card information, personal information, and access to other stored passwords. This is a critical issue that may cause severe damage to you, your family, or your business.
+
+ 
+
+Related work: This tool builds upon cybersecurity practices. The main example is password strength policies in companies such as Google, GitHub, and various banks. This tool used concepts from the course that were relevant, including functions, conditional statements, string manipulation, loops, etc.
+
+def hash_password() was used to take the password input and hash it using the SHA-256 algorithm.
+import hashlib was used from Python standard library for password hashing.
+hashlib.sha256(password.encode))) creates a hash from the password that is entered using the SHA-256 algorithm.
+.hexidigest() was used to convert the hash into a hexadecimal string, making the hash human readable.
+import re was used from the standard library for confirming password strength.
+is_password_strong() was used to structure logic to evaluate whether the password met the requirements.
+ 
+
+Solution: I thought about a solution to this problem by integrating my knowledge about cybersecurity and the concepts that I learned about in this course. The solution to this problem is to develop a password-hashing tool coupled by a password strength-checker. First, this simple tool instructs the user to enter their password. Next, the tool uses SHA-256 hashing algorithm to hash the characters given by the user. Then the tool calls the hashed data on the screen for the user to view, copy, and store. This tool also checks for password strength, enforcing complexity according to current cybersecurity password standards. The tool will direct the user to create a password that meets these security standards to ensure password safety. If the user does not enter a strong/complex password, the machine will return (false) with a warning message, enforcing the user to follow the password security requirements. The machine will only hash the password when the requirements are met. This tool is designed to help users create strong passwords to store them for best security practices.
